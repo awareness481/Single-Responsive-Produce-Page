@@ -8,12 +8,12 @@
         font-size: $s-size;
     }
 
-    .hambuger{
+    .hambuger {
         display: block;
-    }
 
-    .hambuger:hover ~ a {
-        display: flex;
+        &:hover ~ a, &:active ~ a {
+            display: flex;
+        }
     }
 
     @media screen and (min-width: 600px) {
