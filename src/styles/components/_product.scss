@@ -1,0 +1,44 @@
+.product {
+    display: block;
+    clear: both;
+    width: 75%;
+    height: 80%;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.product-image {
+    width: 45%;
+    margin: 2%;
+
+    .image-active {
+        height: 75%;
+        background-color: gray;
+    }
+    .image-row {
+        display: flex;
+        flex-wrap: wrap;
+
+        .image-small {
+            background-color: gray;
+            height: $xxl-size;
+            margin: 1%;
+            width: 23%;
+        }
+    }
+}
+
+.product-desc {
+    width: 45%;
+    margin: 2%;
+
+    font-size: $m-size;
+
+    .product-title, .product-price {
+        font-size: $l-size;
+    }
+
+    .product-price, .refvar {
+        color: $cyan;
+    }
+}
