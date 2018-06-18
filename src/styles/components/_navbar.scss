@@ -1,0 +1,30 @@
+.main-navbar {
+    overflow: hidden;
+
+    a {
+        display: none;
+        margin: 2%;
+        text-decoration: none;
+        font-size: $s-size;
+    }
+
+    .hambuger{
+        display: block;
+    }
+
+    .hambuger:hover ~ a {
+        display: flex;
+    }
+
+    @media screen and (min-width: 600px) {
+        .hambuger {
+            display: none;
+        }
+
+        a {
+            display: block;
+            float: left;
+            font-size: $m-size;
+        }
+    }
+}
