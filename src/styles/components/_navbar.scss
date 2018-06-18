@@ -10,6 +10,7 @@
 
     .hambuger {
         display: block;
+        font-size: $m-size;
 
         &:hover ~ a, &:active ~ a {
             display: flex;
