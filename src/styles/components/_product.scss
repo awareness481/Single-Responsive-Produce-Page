@@ -1,5 +1,6 @@
 .product {
     display: block;
+    margin: 0 auto;
     clear: both;
     width: 75%;
     height: 80%;
@@ -13,16 +14,17 @@
 
     .image-active {
         height: 75%;
-        background-color: gray;
+        background-color: $lgray;
     }
     .image-row {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
 
         .image-small {
-            background-color: gray;
+            background-color: $lgray;
             height: $xxl-size;
-            margin: 1%;
+            margin-top: 2%;
             width: 23%;
         }
     }
@@ -40,5 +42,9 @@
 
     .product-price, .refvar {
         color: $cyan;
+    }
+
+    .product-text, .product-characteristics {
+        color: #4b5555;
     }
 }
