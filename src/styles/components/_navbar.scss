@@ -25,9 +25,9 @@
         }
     }
 
-    .search {
+    .search, .cart {
         display: none;
-        font-size: $m-size;
+        font-size: $m-size + 0.6rem;
     }
     
 
@@ -45,8 +45,9 @@
             font-size: $m-size;
         }
 
-        .search {
+        .search, .cart {
             display: inline;
+            margin-right: 1%;
             position: relative;
             left: 20%;
             cursor: pointer;
