@@ -21,12 +21,13 @@
         <a href="#">About</a>
         <a href="#">Blog</a>
         <i class="fab fa-sistrix search"></i>
+        <i class="fas fa-shopping-bag cart"></i>
       </nav>
     </header>
     <div class='product'>
       <div class='product-image'>
         <div class='image-active'></div>
-        <div class='image-row'>
+        <div class='row'>
           <div class='image-small'></div>
           <div class='image-small'></div>
           <div class='image-small'></div>
@@ -52,8 +53,32 @@
             <li>Free shipping with 4 days delivery</li>
           </ul>
         </div>
+        <div class='row'>
+          <h4>Color</h4>
+          <h4>Size</h4>
+          <h4>Qty</h4>
+        </div>
+        <div class='row'>
+            <select name="colors" class='select-normal'>
+                <option value='color'>Select Color</option>
+                <option value="red">red</option>
+                <option value="green">green</option>
+                <option value="blue">blue</option>
+                <option value="black">black</option>
+              </select>
+            <select name="size" class='select-normal'>
+                <option value='size'>Select Size</option>
+                <option value="small">S</option>
+                <option value="medium">M</option>
+                <option value="large">L</option>
+                <option value="extra-large">XL</option>
+              </select>
+            <select name="quantity">
+            </select>
       </div>
+      <button class='add-to-cart'><span class='button-text'>Add to Cart</span></button>
     </div>
+  </div>
   <script src="../bundle.js"></script>
 </body>
 
