@@ -11,3 +11,18 @@ ul {
     padding: 0;
     list-style-type: none;
 }
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+%no-style {
+    outline: none;
+    border-style: none;
+}
+
+button, button:focus, select {
+    @extend %no-style;
+}
