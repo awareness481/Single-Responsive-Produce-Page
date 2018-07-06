@@ -13,17 +13,41 @@
 <body>
     <header>
       <h2 class='site-name'>Bonfire</h2>
-      <nav class='main-navbar'>
-        <a href="#" class='hambuger' id="menu-icon"><i class="fas fa-bars"></i></a>
-        <a href="#">Home</a>
-        <a href="#">Men</a>
-        <a href="#">Women</a>
-        <a href="#">About</a>
-        <a href="#">Blog</a>
-        <i class="fab fa-sistrix search"></i>
-        <i class="fas fa-shopping-bag cart"></i>
+      <a href="#main-menu"
+        class="menu-toggle"
+        role="button"
+        id="main-menu-toggle"
+        aria-expanded="false"
+        aria-controls="main-menu"
+        aria-label="Open main menu">
+        <span class="fa fa-bars" aria-hidden="true"></span>
+      </a>
+      <nav id='main-menu'
+        class='main-menu'
+        role='navigation'>
+        <a href='#main-menu-toggle'
+          class='menu-close'
+          role='button'
+          id='main-menu-close'
+          aria-expanded="false"
+          aria-controls="main-menu"
+          aria-label="Close main menu">
+          <span class="fas fa-times" aria-hidden="true"></span>
+        </a>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Men</a></li>
+          <li><a href="#">Women</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>  
       </nav>
-    </header>
+      <a href="#main-menu-toggle"
+        class="backdrop"
+        tabindex="-1"
+        aria-hidden="true"
+        hidden></a> 
+      </header>
     <div class='product'>
       <div class='product-image'>
         <div class='image-active'></div>
@@ -47,16 +71,15 @@
         </p>
         <div class='product-characteristics'>
           <ul>
-            <li>Dark blue suit for a tone-on-tone look</li>
-            <li>Regular fit</li>
-            <li>100% Cotton</li>
-            <li>Free shipping with 4 days delivery</li>
+            <li><i class="fas fa-chevron-right"></i>   Dark blue suit for a tone-on-tone look</li>
+            <li><i class="fas fa-chevron-right"></i>   Regular fit</li>
+            <li><i class="fas fa-chevron-right"></i>   100% Cotton</li>
+            <li><i class="fas fa-chevron-right"></i>   Free shipping with 4 days delivery</li>
           </ul>
         </div>
         <div class='row'>
           <h4>Color</h4>
           <h4>Size</h4>
-          <h4>Qty</h4>
         </div>
         <div class='row'>
             <select name="colors" class='select-normal'>
@@ -65,15 +88,13 @@
                 <option value="green">green</option>
                 <option value="blue">blue</option>
                 <option value="black">black</option>
-              </select>
+            </select>
             <select name="size" class='select-normal'>
                 <option value='size'>Select Size</option>
                 <option value="small">S</option>
                 <option value="medium">M</option>
                 <option value="large">L</option>
                 <option value="extra-large">XL</option>
-              </select>
-            <select name="quantity">
             </select>
       </div>
       <button class='add-to-cart'><span class='button-text'>Add to Cart</span></button>
