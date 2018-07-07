@@ -1,8 +1,8 @@
 .menu-toggle {
     display: inline-block;
     padding: .75em 15px;
-    line-height: 1em;
-    font-size: 1em;
+    line-height: 1rem;
+    font-size: 32px;
     color: #333;
 
     &:hover,
@@ -36,8 +36,8 @@
     a {
         display: block;
         padding: .75em 15px;
-        line-height: 1em;
-        font-size: 1em;
+        line-height: 70px;
+        font-size: $m-size;
         color: #fff;
         text-decoration: none;
         border-bottom: 1px solid #383838;
@@ -99,6 +99,7 @@
 
 .site-name {
     text-align: center;
+    margin-bottom: -50px;
     font-size: $xl-size;
 }
 
@@ -154,6 +155,10 @@
 
     }
 
+
+    .site-name {
+        margin-bottom: $m-size;
+    }
     // .search, .cart {
     //     display: inline;
     //     margin-right: 1%;
